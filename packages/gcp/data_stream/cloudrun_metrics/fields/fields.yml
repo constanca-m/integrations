@@ -2,6 +2,10 @@
   description: Google Cloud Run metrics
   type: group
   fields:
+    - name: labels_id
+      type: keyword
+      dimension: true
+      description: Labels fingerprint to uniquely identify a document.
     - name: container.billable_instance_time
       type: double
       description: Billable time aggregated across all container instances. For a given container instance, billable time occurs when the container instance is starting or at least one request is being processed. Billable time is rounded up to the nearest 100 milliseconds.

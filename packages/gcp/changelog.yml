@@ -1,5 +1,5 @@
 # newer versions go on top
-- version: "2.24.0"
+- version: "2.26.0"
   changes:
     - description: Update package to ECS 8.8.0.
       type: enhancement

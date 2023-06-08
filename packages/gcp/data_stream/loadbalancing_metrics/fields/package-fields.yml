@@ -2,10 +2,6 @@
   description: >-
     GCP module
   fields:
-    - name: labels_id
-      type: keyword
-      dimension: true
-      description: Labels fingerprint to uniquely identify a document.
     - name: labels
       type: object
       description: >-

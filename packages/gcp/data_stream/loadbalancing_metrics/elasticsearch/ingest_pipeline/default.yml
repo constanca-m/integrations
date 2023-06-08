@@ -123,7 +123,7 @@ processors:
       ignore_missing: true
   - fingerprint:
       fields: [ "gcp.labels" ]
-      target_field: "gcp.labels_id"
+      target_field: "gcp.loadbalancing.labels_id"
       ignore_failure: true
       ignore_missing: true
 on_failure:

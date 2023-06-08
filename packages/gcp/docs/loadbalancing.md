@@ -349,7 +349,6 @@ An example event for `loadbalancing` looks as following:
 | gcp.labels.resource.\* |  | object |
 | gcp.labels.system.\* |  | object |
 | gcp.labels.user.\* |  | object |
-| gcp.labels_id | Labels fingerprint to uniquely identify a document. | keyword |
 | gcp.loadbalancing.https.backend_latencies.value | A distribution of the latency calculated from when the request was sent by the proxy to the backend until the proxy received from the backend the last byte of response. | object |
 | gcp.loadbalancing.https.backend_request.bytes | The number of bytes sent as requests from HTTP/S load balancer to backends. | long |
 | gcp.loadbalancing.https.backend_request.count | The number of requests served by backends of HTTP/S load balancer. | long |
@@ -373,6 +372,7 @@ An example event for `loadbalancing` looks as following:
 | gcp.loadbalancing.l3.internal.ingress.bytes | The number of bytes sent from client to ILB backend (for TCP flows it's counting bytes on application stream only). | long |
 | gcp.loadbalancing.l3.internal.ingress_packets.count | The number of packets sent from client to ILB backend. | long |
 | gcp.loadbalancing.l3.internal.rtt_latencies.value | A distribution of RTT measured over TCP connections for internal TCP/UDP load balancer flows. | object |
+| gcp.loadbalancing.labels_id | Labels fingerprint to uniquely identify a document. | keyword |
 | gcp.loadbalancing.tcp_ssl_proxy.closed_connections.value | Number of connections that were terminated over TCP/SSL proxy. | long |
 | gcp.loadbalancing.tcp_ssl_proxy.egress.bytes | Number of bytes sent from VM to client using proxy. | long |
 | gcp.loadbalancing.tcp_ssl_proxy.frontend_tcp_rtt.value | A distribution of the smoothed RTT (in ms) measured by the proxy's TCP stack, each minute application layer bytes pass from proxy to client. | object |
