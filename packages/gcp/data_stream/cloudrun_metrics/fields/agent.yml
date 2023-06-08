@@ -11,6 +11,7 @@
       ignore_above: 1024
       description: Instance name of the host machine.
     - name: project.id
+      dimension: true
       type: keyword
       description: Name of the project in Google Cloud.
     - name: image.id

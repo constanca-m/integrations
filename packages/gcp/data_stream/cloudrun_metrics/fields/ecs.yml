@@ -13,6 +13,7 @@
   name: cloud.machine.type
 - external: ecs
   name: cloud.provider
+  dimension: true
 - external: ecs
   name: cloud.region
 - external: ecs
