@@ -4,10 +4,13 @@
   fields:
     - name: document.delete.count
       type: long
+      metric_type: DELTA
       description: The number of successful document deletes.
     - name: document.read.count
       type: long
+      metric_type: DELTA
       description: The number of successful document reads from queries or lookups.
     - name: document.write.count
       type: long
+      metric_type: DELTA
       description: The number of successful document writes.

@@ -4,10 +4,12 @@
   fields:
     - name: container.billable_instance_time
       type: double
+      metric_type: gauge
       description: Billable time aggregated across all container instances. For a given container instance, billable time occurs when the container instance is starting or at least one request is being processed. Billable time is rounded up to the nearest 100 milliseconds.
     - name: container.cpu.allocation_time.sec
       type: double
       unit: s
+      metric_type: gauge
       description: Container CPU allocation in seconds.
     - name: container.cpu.utilizations
       type: object
@@ -23,6 +25,7 @@
       description: Distribution of the maximum number number of concurrent requests being served by each container instance over a minute.
     - name: container.memory.allocation_time
       type: double
+      metric_type: gauge
       description: Container memory allocation in Gigabytes-seconds.
     - name: container.memory.utilizations
       type: object
@@ -31,13 +34,16 @@
     - name: container.network.received.bytes
       type: long
       unit: byte
+      metric_type: gauge
       description: Incoming socket and HTTP response traffic, in bytes.
     - name: container.network.sent.bytes
       type: long
       unit: byte
+      metric_type: gauge
       description: Outgoing socket and HTTP response traffic, in bytes.
     - name: request.count
       type: long
+      metric_type: gauge
       description: Number of requests reaching the revision. Excludes requests that are not reaching your container instances (e.g. unauthorized requests or when maximum number of instances is reached).
     - name: request_latencies
       type: object
